@@ -26,6 +26,7 @@ class SignUp extends React.Component{
         }
         if(this.state.password.length<8){
             this.setState({longPassError:true});
+            return
         }
         try{
             await axios.post("http://localhost:8080/insertUser",this.state);
@@ -40,22 +41,22 @@ class SignUp extends React.Component{
    }
 
     render(){
-        return <div>
+        return <div className='body'>
             {this.state.goBack && <Navigate to="/login"/>}
             <div className="box">
-                {this.state.signup && <div className="signUpSucc">
-                        <p>You have successfully signed in. Go back to log in page</p>
-                        <button onClick={this.handleClickGoBack}>Go back</button>
+                { <div className="signUpSucc">
+                        <p className='goodPass'>You have successfully signed in. Go back to log in page</p>
+                        <button className='goodPass' onClick={this.handleClickGoBack}>Go back</button>
                     </div>}
                 <input type="text" placeholder='Username' name='username' onChange={this.handleChange} />
-                {this.state.userError && <p>You have to insert username</p>}
+                {this.state.userError && <p className='wrongPass'>You have to insert username</p>}
                 <input type="text" placeholder='Name' name='name' onChange={this.handleChange}/>
                 <input type="text" placeholder='Surname' name='surname' onChange={this.handleChange}/>
                 <input type="text" placeholder='Amount' name='amount' onChange={this.handleChange}/>
                 <input type="password" placeholder='Password' name='password' onChange={this.handleChange}/>
                 <input type='password' placeholder='Repeat password' name="repeatpass" onChange={this.handleChange}/>
-                {this.state.passError && <p>Passwords are different</p>}
-                {this.state.longPassError && <p>Password should have at least 8 chars!</p>}
+                {this.state.passError && <p className='wrongPass'>Passwords are different</p>}
+                {this.state.longPassError && <p className='wrongPass'>Password should have at least 8 chars!</p>}
                 <button onClick={this.handleClick}>Sing up</button>
                 
             </div>

@@ -1,0 +1,310 @@
+*{
+    padding:0px;
+    margin:0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:600px;
+}
+.box{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height:400px;
+    width:250px;
+    border-radius: 10px;
+    border:1px solid gray;
+    
+    box-shadow: 0px 0px 5px 5px gainsboro;
+}
+.box > input{
+    text-align: center;
+    width:70%;
+    padding:10px;
+    border-color: gainsboro;
+    border:1px solid gray;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 5px gainsboro;
+}
+
+.box > button{
+    width:70%;
+    padding:10px;
+    background-color: darkorange;
+    border:none;
+    color:white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 3px gainsboro;
+}
+
+.wrongPass{
+    background-color: tomato;
+    border:none;
+    padding:10px;
+    color:white;
+    border-radius:10px;
+}
+
+.signUpSucc{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.goodPass{
+    background-color: green;
+    padding:10px;
+    color:white;
+    border-radius:10px;
+    border:none;
+}
+
+/*dio za User*/
+
+.main{
+    display:flex;
+    flex-direction: row;
+}
+
+.profile{
+    margin-top:50px;
+    margin-left:20px;
+    background-color: orange;
+    padding:20px;
+    color:white;
+    border-radius:10px;
+}
+
+.profilePic{
+    width:125px;
+}
+
+.profileInfo{
+    display:flex;
+    flex-direction: column;
+    height:50px;
+    justify-content: space-between;
+    margin-top:30px;
+    margin-bottom:15px;
+}
+.profileInfo > div{
+    display:flex;
+    flex-direction: row;
+}
+.profileInfo > div >*:first-child{
+    margin-right: 3px;
+}
+.options{
+    display:flex;
+    flex-direction: column;
+    margin-left:20px;
+    justify-content: start;
+    margin-top:50px;
+    border-radius:10px;
+    
+}
+
+.userButton{
+    display:flex;
+    justify-content: space-around;
+    color:white;
+    border-radius:10px;
+    background-color: orange;
+    width:1000px;
+
+}
+
+.userShow{
+    margin-top:20px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width:1000px;
+}
+.userShow>div{
+    background-color: orange;
+    width:33%;
+    border-radius:10px;
+}
+.request{
+    padding:10px;
+    width:100%;
+}
+.inside{
+    background-color: #764100;
+    display:flex;
+    
+    flex-direction: column;
+    padding:10px;
+    border-radius:10px;
+    overflow-y: scroll;
+}
+.requestUnit{
+    background-color: orange;
+    display:flex;
+    flex-direction: row;
+    border-radius:10px;
+    margin-bottom:1px;
+    padding:5px;
+}
+
+
+/*.profile{
+    position:fixed;
+    top:15%;
+    left:37%;
+    padding:0px;
+    display:flex;
+    flex-direction: row;
+    background-color: blue;
+    padding:20px;
+}
+.profileInfo{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left:10px;
+    color:aliceblue;
+}
+.profileInfo p,h3{
+    background-color: darkblue;
+    padding:4px 16px;
+}
+.profileInfo > div{
+    display:flex;
+    flex-direction: row;
+}
+.profilePic{
+    width:180px;
+}
+
+.options{
+    position:fixed;
+    top:47%;
+    left:37%;
+    background-color: blue;
+    width:373px;
+    display:flex;
+    flex-direction: column;
+    padding: 10px;
+    justify-content: space-between;
+}
+.options button{
+    margin:5px;
+    color:aliceblue;
+    background-color: darkblue;
+    padding-top:2px;
+    padding-bottom:2px;
+}
+
+
+.account{
+    position:fixed;
+    top:64%;
+    left:40%;
+    display:flex;
+    flex-direction: column;
+    color:aliceblue;
+    padding: 10px;
+    background-color: blue;
+    align-items: center;
+    justify-content: space-between;
+}
+.account p,h3{
+    padding:4px 14px;
+    background-color: darkblue;
+}
+.account > div{
+    display:flex;
+    flex-direction: row;
+}
+
+.request{
+    position:fixed;
+    top:46%;
+    left:65%;
+    width:400px;
+    height:300px;
+    background-color: blue;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+}
+
+.inside{
+    width: 380px;
+    height: 260px;
+    background-color: darkblue;
+    overflow: scroll;
+    display:flex;
+    flex-direction: column;
+    color:aliceblue;
+    padding: 10px;
+}
+.requestUnit{
+    border: solid white 2px;
+    border-radius: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    background-color: blue;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.box{
+    height:10px;
+    width:10px;
+    border:solid white 3px;
+}
+
+.request button{
+    margin:5px;
+    color:aliceblue;
+    background-color: darkblue;
+    padding:4px 14px;
+}*/
+
+
+.window{
+    position:fixed;
+    width:600px;
+    height:400px;
+    top:20%;
+    left:33%;
+    background-color: blue;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.forms{
+    width:550px;
+    height:300px;
+    background-color: darkblue;
+    color:white;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.forms>div{
+    display:flex;
+    flex-direction: row;
+}
+
+
+
+
+
+
+
